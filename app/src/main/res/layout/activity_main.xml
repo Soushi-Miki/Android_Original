@@ -3,16 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/timeTextLabel"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
-    android:background="#D5D5D5"
+    android:background="#C8C1C1"
     tools:context=".MainActivity">
+
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/startButton"
         android:layout_width="157dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="12dp"
         android:background="#FFD600"
         android:fontFamily="sans-serif-black"
         android:text="START"
@@ -20,275 +21,400 @@
         android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.535"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/secondText"
+        android:layout_width="77dp"
+        android:layout_height="113dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-black"
+        android:text="  0"
+        android:textColor="#C51162"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="@+id/timeLabelText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/timeLabelText"
+        app:layout_constraintTop_toBottomOf="@+id/timeLabelText" />
 
     <TextView
         android:id="@+id/timeLabelText"
         android:layout_width="78dp"
         android:layout_height="0dp"
-        android:layout_marginStart="156dp"
-        android:layout_marginTop="80dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginStart="328dp"
+        android:layout_marginTop="12dp"
         android:background="#F30606"
         android:fontFamily="sans-serif-black"
         android:text="   Time"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/secondText"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/secondText"
-        android:layout_width="44dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="24dp"
-        android:fontFamily="sans-serif-black"
-        android:text="  0"
-        android:textColor="#C51162"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="@+id/timeLabelText"
-        app:layout_constraintHorizontal_bias="0.47"
-        app:layout_constraintStart_toStartOf="@+id/timeLabelText"
-        app:layout_constraintTop_toBottomOf="@+id/timeLabelText" />
-
-    <ImageButton
-        android:id="@+id/imageButton11"
-        android:layout_width="51sp"
-        android:layout_height="61sp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="340dp"
+    <ImageView
+        android:id="@+id/huseikaiImage30"
+        android:layout_width="51dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="332dp"
+        android:layout_marginTop="280dp"
+        android:scaleType="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/timeLabelText"
         app:srcCompat="@drawable/ic_launcher_foreground" />
 
-    <ImageButton
-        android:id="@+id/imageButton12"
-        android:layout_width="51sp"
-        android:layout_height="61sp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="400dp"
+    <ImageView
+        android:id="@+id/huseikaiImage29"
+        android:layout_width="51dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="208dp"
+        android:scaleType="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/timeLabelText"
         app:srcCompat="@drawable/ic_launcher_foreground" />
 
-    <ImageButton
-        android:id="@+id/imageButton13"
-        android:layout_width="51sp"
-        android:layout_height="61sp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="460dp"
+    <ImageView
+        android:id="@+id/huseikaiImage28"
+        android:layout_width="51dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="208dp"
+        android:scaleType="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/timeLabelText"
         app:srcCompat="@drawable/ic_launcher_foreground" />
 
-    <ImageButton
-        android:layout_width="51sp"
-        android:layout_height="61sp"
-        android:layout_marginStart="52dp"
+    <ImageView
+        android:id="@+id/huseikaiImage27"
+        android:layout_width="51dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="252dp"
+        android:layout_marginTop="224dp"
+        android:scaleType="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/timeLabelText"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <ImageView
+        android:id="@+id/huseikaiImage26"
+        android:layout_width="51dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="488dp"
+        android:scaleType="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/timeLabelText"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <ImageView
+        android:id="@+id/huseikaiImage25"
+        android:layout_width="51dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="284dp"
+        android:layout_marginTop="444dp"
+        android:scaleType="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/timeLabelText"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <ImageView
+        android:id="@+id/huseikaiImage24"
+        android:layout_width="51dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="424dp"
+        android:scaleType="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/timeLabelText"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <ImageView
+        android:id="@+id/huseikaiImage23"
+        android:layout_width="51dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="148dp"
+        android:scaleType="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/timeLabelText"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <ImageView
+        android:id="@+id/huseikaiImage22"
+        android:layout_width="51dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="296dp"
+        android:layout_marginTop="516dp"
+        android:scaleType="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/timeLabelText"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <ImageView
+        android:id="@+id/huseikaiImage21"
+        android:layout_width="51dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="352dp"
+        android:scaleType="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/timeLabelText"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <ImageView
+        android:id="@+id/huseikaiImage20"
+        android:layout_width="51dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="580dp"
+        android:scaleType="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/timeLabelText"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <ImageView
+        android:id="@+id/huseikaiImage19"
+        android:layout_width="51dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="188dp"
+        android:layout_marginTop="208dp"
+        android:scaleType="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/timeLabelText"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <ImageView
+        android:id="@+id/huseikaiImage18"
+        android:layout_width="51dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="276dp"
+        android:scaleType="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/timeLabelText"
         app:srcCompat="@drawable/ic_launcher_foreground" />
 
-    <ImageButton
-        android:id="@+id/imageButton15"
+    <ImageView
+        android:id="@+id/huseikaiImage17"
+        android:layout_width="51dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="280dp"
+        android:scaleType="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/timeLabelText"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <ImageView
+        android:id="@+id/huseikaiImage16"
+        android:layout_width="51dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="248dp"
+        android:layout_marginTop="300dp"
+        android:scaleType="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/timeLabelText"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <ImageView
+        android:id="@+id/huseikaiImage15"
+        android:layout_width="51dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="332dp"
+        android:layout_marginTop="212dp"
+        android:scaleType="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/timeLabelText"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <ImageView
+        android:id="@+id/huseikaiImage14"
+        android:layout_width="51dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="416dp"
+        android:scaleType="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/timeLabelText"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <ImageView
+        android:id="@+id/huseikaiImage13"
+        android:layout_width="51dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="500dp"
+        android:scaleType="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/timeLabelText"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <ImageView
+        android:id="@+id/huseikaiImage12"
+        android:layout_width="51dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="284dp"
+        android:layout_marginTop="372dp"
+        android:scaleType="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/timeLabelText"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <ImageView
+        android:id="@+id/huseikaiImage11"
+        android:layout_width="51dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="184dp"
+        android:layout_marginTop="276dp"
+        android:scaleType="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/timeLabelText"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <ImageView
+        android:id="@+id/huseikaiImage10"
+        android:layout_width="51dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="344dp"
+        android:layout_marginTop="352dp"
+        android:scaleType="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/timeLabelText"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <ImageView
+        android:id="@+id/huseikaiImage9"
+        android:layout_width="51dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="184dp"
+        android:layout_marginTop="352dp"
+        android:scaleType="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/timeLabelText"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <ImageView
+        android:id="@+id/huseikaiImage8"
+        android:layout_width="51dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="204dp"
+        android:layout_marginTop="424dp"
+        android:scaleType="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/timeLabelText"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <ImageView
+        android:id="@+id/huseikaiImage7"
+        android:layout_width="51dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="356dp"
+        android:layout_marginTop="424dp"
+        android:scaleType="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/timeLabelText"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <ImageView
+        android:id="@+id/huseikaiImage6"
+        android:layout_width="51dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="564dp"
+        android:scaleType="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/timeLabelText"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <ImageView
+        android:id="@+id/huseikaiImage5"
+        android:layout_width="51dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="580dp"
+        android:scaleType="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/timeLabelText"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <ImageView
+        android:id="@+id/huseikaiImage4"
+        android:layout_width="51dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="504dp"
+        android:scaleType="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/timeLabelText"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <ImageView
+        android:id="@+id/huseikaiImage3"
+        android:layout_width="51dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="352dp"
+        android:scaleType="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/timeLabelText"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <ImageView
+        android:id="@+id/huseikaiImage1"
         android:layout_width="51sp"
         android:layout_height="61sp"
-        android:layout_marginStart="268dp"
-        android:layout_marginTop="188dp"
+        android:layout_marginStart="344dp"
+        android:layout_marginTop="488dp"
+        android:scaleType="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/timeLabelText"
         app:srcCompat="@drawable/ic_launcher_foreground" />
 
-    <ImageButton
-        android:id="@+id/imageButton16"
+    <ImageView
+        android:id="@+id/huseikaiImage"
         android:layout_width="51sp"
         android:layout_height="61sp"
         android:layout_marginStart="196dp"
-        android:layout_marginTop="188dp"
+        android:layout_marginTop="580dp"
+        android:scaleType="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/timeLabelText"
         app:srcCompat="@drawable/ic_launcher_foreground" />
 
-    <ImageButton
-        android:id="@+id/imageButton17"
-        android:layout_width="51sp"
-        android:layout_height="61sp"
-        android:layout_marginStart="124dp"
-        android:layout_marginTop="200dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/timeLabelText"
-        app:srcCompat="@drawable/ic_launcher_foreground" />
-
-    <ImageButton
-        android:id="@+id/imageButton18"
-        android:layout_width="51sp"
-        android:layout_height="61sp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="208dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/timeLabelText"
-        app:srcCompat="@drawable/ic_launcher_foreground" />
-
-    <ImageButton
-        android:id="@+id/imageButton19"
-        android:layout_width="51sp"
-        android:layout_height="61sp"
-        android:layout_marginStart="308dp"
-        android:layout_marginTop="272dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/timeLabelText"
-        app:srcCompat="@drawable/ic_launcher_foreground" />
-
-    <ImageButton
-        android:id="@+id/imageButton20"
-        android:layout_width="51sp"
-        android:layout_height="61sp"
-        android:layout_marginStart="308dp"
-        android:layout_marginTop="336dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/timeLabelText"
-        app:srcCompat="@drawable/ic_launcher_foreground" />
-
-    <ImageButton
-        android:id="@+id/imageButton21"
-        android:layout_width="51sp"
-        android:layout_height="61sp"
-        android:layout_marginStart="308dp"
-        android:layout_marginTop="400dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/timeLabelText"
-        app:srcCompat="@drawable/ic_launcher_foreground" />
-
-    <ImageButton
-        android:id="@+id/imageButton22"
-        android:layout_width="51sp"
-        android:layout_height="61sp"
-        android:layout_marginStart="308dp"
-        android:layout_marginTop="460dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/timeLabelText"
-        app:srcCompat="@drawable/ic_launcher_foreground" />
-
-    <ImageButton
-        android:id="@+id/imageButton23"
-        android:layout_width="51sp"
-        android:layout_height="61sp"
+    <ImageView
+        android:id="@+id/huseikaiImage2"
+        android:layout_width="51dp"
+        android:layout_height="61dp"
         android:layout_marginStart="180dp"
-        android:layout_marginTop="396dp"
+        android:layout_marginTop="500dp"
+        android:scaleType="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/timeLabelText"
         app:srcCompat="@drawable/ic_launcher_foreground" />
 
     <ImageButton
-        android:id="@+id/imageButton24"
+        android:id="@+id/imageButton"
         android:layout_width="51sp"
         android:layout_height="61sp"
-        android:layout_marginStart="180dp"
-        android:layout_marginTop="276dp"
+        android:layout_marginStart="344dp"
+        android:layout_marginTop="564dp"
+        android:background="#B8B7B7"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/timeLabelText"
         app:srcCompat="@drawable/ic_launcher_foreground" />
 
-    <ImageButton
-        android:id="@+id/imageButton25"
-        android:layout_width="51sp"
-        android:layout_height="61sp"
-        android:layout_marginStart="248dp"
-        android:layout_marginTop="272dp"
+    <TextView
+        android:id="@+id/numberTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="sans-serif-black"
+        android:text="0"
+        android:textColor="#FFD600"
+        android:textSize="80sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/timeLabelText"
-        app:srcCompat="@drawable/ic_launcher_foreground" />
-
-    <ImageButton
-        android:id="@+id/imageButton26"
-        android:layout_width="51sp"
-        android:layout_height="61sp"
-        android:layout_marginStart="248dp"
-        android:layout_marginTop="336dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/timeLabelText"
-        app:srcCompat="@drawable/ic_launcher_foreground" />
-
-    <ImageButton
-        android:id="@+id/imageButton27"
-        android:layout_width="51sp"
-        android:layout_height="61sp"
-        android:layout_marginStart="248dp"
-        android:layout_marginTop="400dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/timeLabelText"
-        app:srcCompat="@drawable/ic_launcher_foreground" />
-
-    <ImageButton
-        android:id="@+id/imageButton28"
-        android:layout_width="51sp"
-        android:layout_height="61sp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="456dp"
-        app:layout_constraintStart_toEndOf="@+id/imageButton30"
-        app:layout_constraintTop_toTopOf="@+id/timeLabelText"
-        app:srcCompat="@drawable/ic_launcher_foreground" />
-
-    <ImageButton
-        android:id="@+id/imageButton29"
-        android:layout_width="51sp"
-        android:layout_height="61sp"
-        android:layout_marginStart="180dp"
-        android:layout_marginTop="340dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/timeLabelText"
-        app:srcCompat="@drawable/ic_launcher_foreground" />
-
-    <ImageButton
-        android:id="@+id/imageButton30"
-        android:layout_width="51sp"
-        android:layout_height="61sp"
-        android:layout_marginStart="180dp"
-        android:layout_marginTop="456dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/timeLabelText"
-        app:srcCompat="@drawable/ic_launcher_foreground" />
-
-    <ImageButton
-        android:id="@+id/imageButton31"
-        android:layout_width="51sp"
-        android:layout_height="61sp"
-        android:layout_marginStart="120dp"
-        android:layout_marginTop="272dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/timeLabelText"
-        app:srcCompat="@drawable/ic_launcher_foreground" />
-
-    <ImageButton
-        android:id="@+id/imageButton32"
-        android:layout_width="51sp"
-        android:layout_height="61sp"
-        android:layout_marginStart="120dp"
-        android:layout_marginTop="336dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/timeLabelText"
-        app:srcCompat="@drawable/ic_launcher_foreground" />
-
-    <ImageButton
-        android:id="@+id/imageButton33"
-        android:layout_width="51sp"
-        android:layout_height="61sp"
-        android:layout_marginStart="120dp"
-        android:layout_marginTop="400dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/timeLabelText"
-        app:srcCompat="@drawable/ic_launcher_foreground" />
-
-    <ImageButton
-        android:id="@+id/imageButton34"
-        android:layout_width="51sp"
-        android:layout_height="61sp"
-        android:layout_marginStart="120dp"
-        android:layout_marginTop="456dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/timeLabelText"
-        app:srcCompat="@drawable/ic_launcher_foreground" />
+        app:layout_constraintTop_toTopOf="@+id/secondText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
