@@ -11,12 +11,12 @@ class StartActivity : AppCompatActivity() {
         setContentView(R.layout.activity_start)
 
         //カウント画面へ移動する準備をする
-        val countIntent: Intent = Intent(this,MainActivity::class.java)
+        val question: Intent = Intent(this,MainActivity::class.java)
         //Goボタンがタップされたら
         goButton.setOnClickListener {
 
             //カウント画面に移動する
-            startActivity(countIntent)
+            startActivity(question)
         }
     }
 }

@@ -1,6 +1,6 @@
 package app.miki.mikiso.countodai
 
-import android.graphics.Color
+import android.content.Intent
 import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -8,6 +8,7 @@ import android.os.CountDownTimer
 import android.view.MotionEvent
 import androidx.core.view.isVisible
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_quiz.*
 
 class MainActivity : AppCompatActivity() {
     //残り秒数を10秒にセット
@@ -37,10 +38,18 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        //Quiz画面へ移動する準備をする
+        val next : Intent = Intent(this,QuizActivity::class.java)
+        //nextボタンがタップされたときに
+        nextButton.setOnClickListener {
+            //QuizActivityに移動する
+            startActivity(next)
+        }
+
+
         //STARTボタンがタップされた時に
         startButton.setOnClickListener {
-
-            //タップされた数をテキストビューに反映する
             numberTextView.text = tapCount.toString()
             //STARTボタンを見えない状態にする
             startButton.isVisible = false
@@ -51,7 +60,6 @@ class MainActivity : AppCompatActivity() {
 
         //ボタンがタップされた時に
         imageButton.setOnClickListener {
-            //残り秒数が10秒より少ない時に
             if (second < 5) {
                 //タップを数える変数にプラス1する
                 tapCount = tapCount + 1
@@ -60,8 +68,6 @@ class MainActivity : AppCompatActivity() {
             }
 
         }
-
-
 
         val huseikaisound = MediaPlayer.create(this, R.raw.huseikai)
         huseikaiImage.setOnTouchListener { view, event ->
@@ -311,8 +317,6 @@ class MainActivity : AppCompatActivity() {
             }
             true
         }
-
-
 
     }
 }
