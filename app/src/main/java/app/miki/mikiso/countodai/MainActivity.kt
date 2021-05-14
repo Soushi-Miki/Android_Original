@@ -12,17 +12,17 @@ import kotlinx.android.synthetic.main.activity_quiz.*
 
 class MainActivity : AppCompatActivity() {
     //残り秒数を10秒にセット
-    var second = 5
+    var second = 10
     //タップを数える変数を準備する
     var tapCount = 0
 
     //タイマーを設定する
-    val timer : CountDownTimer = object : CountDownTimer(5000,1000){
+    val timer : CountDownTimer = object : CountDownTimer(10000,1000){
         override fun onFinish() {
             //STARTボタンを見える状態にする
             startButton.isVisible = true
             //残り秒数を10秒にセット
-            second = 5
+            second = 10
             //タップを数える変数を0に戻す
             tapCount = 0
         }
@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity() {
 
         //ボタンがタップされた時に
         imageButton.setOnClickListener {
-            if (second < 5) {
+            if (second < 10) {
                 //タップを数える変数にプラス1する
                 tapCount = tapCount + 1
                 //タップされた数をテキストビューに反映する
